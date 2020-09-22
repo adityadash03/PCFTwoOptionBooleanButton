@@ -1,0 +1,116 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\LPLControl\\TwoOptionBooleanButton\\TwoOptionButtonSolution\\TwoOptionButtonSolution.cdsproj": {}
+  },
+  "projects": {
+    "C:\\LPLControl\\TwoOptionBooleanButton\\TwoOptionBooleanButton.pcfproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\LPLControl\\TwoOptionBooleanButton\\TwoOptionBooleanButton.pcfproj",
+        "projectName": "TwoOptionBooleanButton",
+        "projectPath": "C:\\LPLControl\\TwoOptionBooleanButton\\TwoOptionBooleanButton.pcfproj",
+        "packagesPath": "C:\\Users\\adash\\.nuget\\packages\\",
+        "outputPath": "C:\\LPLControl\\TwoOptionBooleanButton\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\adash\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net462": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "dependencies": {
+            "Microsoft.PowerApps.MSBuild.Pcf": {
+              "target": "Package",
+              "version": "[1.*, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\LPLControl\\TwoOptionBooleanButton\\TwoOptionButtonSolution\\TwoOptionButtonSolution.cdsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\LPLControl\\TwoOptionBooleanButton\\TwoOptionButtonSolution\\TwoOptionButtonSolution.cdsproj",
+        "projectName": "TwoOptionButtonSolution",
+        "projectPath": "C:\\LPLControl\\TwoOptionBooleanButton\\TwoOptionButtonSolution\\TwoOptionButtonSolution.cdsproj",
+        "packagesPath": "C:\\Users\\adash\\.nuget\\packages\\",
+        "outputPath": "C:\\LPLControl\\TwoOptionBooleanButton\\TwoOptionButtonSolution\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\adash\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net462": {
+            "projectReferences": {
+              "C:\\LPLControl\\TwoOptionBooleanButton\\TwoOptionBooleanButton.pcfproj": {
+                "projectPath": "C:\\LPLControl\\TwoOptionBooleanButton\\TwoOptionBooleanButton.pcfproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "dependencies": {
+            "Microsoft.PowerApps.MSBuild.Solution": {
+              "target": "Package",
+              "version": "[1.*, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

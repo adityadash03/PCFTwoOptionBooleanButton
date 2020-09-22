@@ -1,0 +1,55 @@
+.btn-group button {
+  background-color: transparent; /* Transparent background */
+  border-right: 1px solid white;
+  border-bottom: none white;
+  border-top: none white;
+  border-left: none white;
+  color: white; /* White text */
+  padding: 0 24px 1px 24px;
+  cursor: pointer;
+  float: left;
+  font-weight: normal;
+  font-size: 13px;
+  font-family: "SegoeUI", "Segoe UI";
+  height: 28px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  outline: none;
+}
+
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:last-child {
+  border-right: none; /* Prevent double borders */
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 2px 10px 2px 10px;
+  font-size: 13px;
+  font-family: "SegoeUI", "Segoe UI";
+  /* Position the tooltip */
+  position: relative;
+  z-index: 10;
+  margin-left: -60px;
+  border: 1px solid black;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
