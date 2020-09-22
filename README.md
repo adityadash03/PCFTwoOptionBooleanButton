@@ -14,3 +14,11 @@ This control is a TwoOption control for model driven app (D365), which will disp
  
  ## Control Registration Steps 
  - After import of the control the control is available in the list of available controls
+![alternativetext](ReadmeImages/image3.png)
+
+![alternativetext](ReadmeImages/image4.png)
+
+## OptionSet Color Configuration
+To set the color of the two optionset buttons configure the color in the two optionset attribute
+
+![alternativetext](ReadmeImages/image5.png)
