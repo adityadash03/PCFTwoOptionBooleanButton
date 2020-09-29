@@ -48,18 +48,18 @@ export class TwoOptionBooleanButton
     context.mode.trackContainerResize(false);
     // Get all options
     this.optionSetArray =
-     context.parameters.TwoOptionSetAttribute.attributes?.Options;    
+      context.parameters.TwoOptionSetAttribute.attributes?.Options;
 
     // Add code to update control view
     this._defaultValue =
       context.parameters.TwoOptionSetAttribute.attributes?.DefaultValue;
 
     // Current selected value
-    let currentInputData = context.parameters.TwoOptionSetAttribute.raw || null;
+    let currentInputData = context.parameters.TwoOptionSetAttribute.raw;
     if (currentInputData != null) {
       this._outputValue = currentInputData;
     } else {
-      if (this._defaultValue) {
+      if (this._defaultValue != null) {
         this._outputValue = this._defaultValue;
       }
     }
