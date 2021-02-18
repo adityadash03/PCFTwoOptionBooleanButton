@@ -12,6 +12,7 @@ export class TwoOptionBooleanButton
 
   private _outputValue: boolean | undefined;
   private _defaultValue: boolean | undefined;
+  private _isControlReadOnly: boolean;
 
   private optionSetArray:
     | ComponentFramework.PropertyHelper.OptionMetadata[]
@@ -25,7 +26,7 @@ export class TwoOptionBooleanButton
   /**
    * Empty constructor.
    */
-  constructor() {}
+  constructor() { }
 
   /**
    * Used to initialize the control instance. Controls can kick off remote server calls and other initialization actions here.
@@ -64,6 +65,7 @@ export class TwoOptionBooleanButton
       }
     }
 
+    this._isControlReadOnly = context.mode.isControlDisabled;
     // UI
     // Main Container
     this.eleMainContainer = document.createElement("div");
@@ -81,8 +83,10 @@ export class TwoOptionBooleanButton
         eleButton.id = this.optionSetArray[i].Value.toString();
         eleButton.style.width = width.toString() + "%";
         eleButton.style.background = "#6f6f6f";
-        eleButton.addEventListener("click", this.onButtonClick.bind(this));
-
+        eleButton.disabled = context.mode.isControlDisabled;
+        if (context.mode.isControlDisabled == false) {
+          eleButton.addEventListener("click", this.onButtonClick.bind(this));
+        }
         this.eleMainContainer.appendChild(eleButton);
       }
     }
@@ -96,6 +100,7 @@ export class TwoOptionBooleanButton
   public updateView(context: ComponentFramework.Context<IInputs>): void {
     if (this.eleMainContainer.children.length > 0) {
       for (var i = 0; i < this.eleMainContainer.children.length; i++) {
+
         let elementButton = this.eleMainContainer.children[
           i
         ] as HTMLButtonElement;
@@ -125,6 +130,8 @@ export class TwoOptionBooleanButton
             elementButton.style.background = "#6f6f6f";
           }
         }
+
+
       }
     }
   }
@@ -147,6 +154,7 @@ export class TwoOptionBooleanButton
 
     // if (selectedElement) this._outputValue = parseInt(selectedElement.id);
     this.theNotifyChanged();
+
   }
 
   /**
